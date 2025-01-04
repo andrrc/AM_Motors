@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Am Motos</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Am Motos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="top-bar">
-    <span>Telefone: (11) 1234-5678 | WhatsApp: (11) 98765-4321</span>
-    <div class="social-icons">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
+      <span>Telefone: (11) 1234-5678 | WhatsApp: (11) 98555-2321</span>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
     </div>
-  </div>
-  <header class="header">
-    <div class="logo">
-      <a href="#"><img src="img/Logo AM 1.png" alt="logo am motos" width="150"></a>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle" id="menu-toggle">
-      &#9776;
-    </div>
-  </header>
+    <header class="header">
+      <div class="logo">
+        <a href="#"
+          ><img src="img/Logo AM 1.png" alt="logo am motos" width="150"
+        /></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+    <section class="banner">
+      <img
+        src="img/Banner Comprar Moto Dia dos Pais Moderno Vermelho e Preto .png"
+        alt=""
+      />
+    </section>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navList = document.querySelector('.nav-list');
+    <section class="main-services-box">
+      <div>
+        <h1>Principais Serviços</h1>
+      </div>
+      <div class="services">
+        <div class="service-01">
+            <div class="bg-service-01">
+          <img src="img/engine-oil.png" alt="" />
+        </div>
+          <p>Troca de Oleo</p>
+        </div>
+        <div class="service-02">
+            <div class="bg-service-01">
+            <img src="img/estepe.png" alt="" />
+        </div>
+            <p>Freios e Suspensão</p>
+        </div>
+        <div class="service-03">
+            <div class="bg-service-01">
+            <img src="img/motor-de-carro (2).png" alt="" />
+        </div>
+            <p>Motor e Mecanica Geral</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navList = document.querySelector(".nav-list");
 
-    menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('active');
-    });
-  </script>
-</body>
+      menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
