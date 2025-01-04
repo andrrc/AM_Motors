@@ -92,6 +92,7 @@ a{
 .main-services-box{
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +108,6 @@ a{
     height: 100%;
     max-height: 800px;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -133,6 +133,40 @@ a{
     height: 200px;
     border-radius: 50%;
 }
+span{
+    font-family: "Raleway-Bold";
+}
+.all-services{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    max-height: 400px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.list-services{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+.all-services h1{
+    font-family: "Raleway-ExtraBold";
+    text-transform: uppercase;
+    font-size: 38px;
+    color: white;
+}
+.all-services ul{
+    flex-wrap: wrap;
+}
+.all-services li{
+    color: white;
+    font-family: "Raleway-ExtraBold";
+    font-size: 30px;
+}
   @media (max-width: 768px) {
     .top-bar {
         flex-direction: row;
@@ -146,8 +180,27 @@ a{
     }
     .services{
         flex-direction: column;
-    }
 
+    }
+    .services p{
+        font-size: 12px;
+    }
+    .main-services-box h1{
+        font-size: 30px;
+    }
+    .bg-service-01{
+        width: 100px;
+        height: 100px;
+    }
+    .engine-oil{
+        width: 50px;
+    }
+    .estepe{
+        width: 50px;
+    }
+    .motor{
+        width: 50px;
+    }
     .nav {
       width: 100%;
     }
