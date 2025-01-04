@@ -10,10 +10,14 @@
     font-family: "Raleway-Bold";
     src: url(Fontes/Raleway/Raleway-Bold.ttf);
 }
+body,html{
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
   }
 a{
     font-family: "Raleway-Bold";
@@ -140,7 +144,7 @@ span{
     width: 100%;
     height: 400px;
     background-color: red;
-    max-height: 400px;
+    max-height: 900px;
     display: flex;
     padding-top: 10px;
     align-items: center;
@@ -166,6 +170,12 @@ span{
     color: white;
     font-family: "Raleway-ExtraBold";
     font-size: 30px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   @media (max-width: 768px) {
     .top-bar {
@@ -200,6 +210,25 @@ span{
     }
     .motor{
         width: 50px;
+    }
+    .all-services{
+        flex-direction: row;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .list-services{
+        flex-direction: column;
+        gap: 0;
+    }
+    .list-services ul{
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .list-services li{
+        font-size: 25px;
     }
     .nav {
       width: 100%;
