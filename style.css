@@ -16,12 +16,15 @@ body,html{
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     height: 100%;
   }
 a{
     font-family: "Raleway-Bold";
 }
+  .footer {
+    margin-top: auto;
+  }
   .top-bar {
     display: flex;
     justify-content: space-between;
@@ -147,6 +150,7 @@ span{
     max-height: 1000px;
     display: flex;
     padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -177,7 +181,104 @@ span{
     justify-content: center;
     align-items: center;
 }
+.products-container{
+  width: 100%;
+  height: 800px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.products-main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.product {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  font-family: "RalewayBold";
+  border-radius: 25px;
+}
+.product a{
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 15px;
+  padding-inline: 50px;
+  box-shadow: 3px 5px 20px black;
+}
+.product img{
+  width: 150px;
+  height: auto;
+}
+.button-container{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "RalewayBold";
+  text-align: center;
+  font-size: 50px;
+}
+.button-container a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+}
+.product-button{
+  width: 60%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 25px;
+}
   @media (max-width: 768px) {
+    .products-container{
+      height: 1200px;
+      gap: 50px;
+    }
+    .product a{
+      padding: 10px;
+      padding-inline: 30px;
+      font-size: 15px;
+      box-shadow: 1.5px 2.5px 10px black;
+    }
+    .product img{
+      width: 100px;
+    }
+    .product{
+      padding: 20px;
+      width: 150px;
+      height: 250px;
+    }
+    .products-main{
+      flex-direction: column;
+      gap: 50px;
+    }
+    .button-container{
+      height: 100px;
+    }
+    .product-button{
+      font-size: 7dvw;
+    }
     .top-bar {
         flex-direction: row;
         align-items: center;
