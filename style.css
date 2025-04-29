@@ -1,28 +1,36 @@
 @font-face {
   font-family: "Raleway-Thin";
-  src: url(Fontes/Raleway/Raleway-Thin.ttf);
+  src: url(Fontes/Raleway/Raleway-Thin.woff) format('woff2');
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url(Fontes/Raleway/Raleway-ExtraBold.ttf);
+  src: url(Fontes/Raleway/Raleway-ExtraBold.woff) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(Fontes/Raleway/Raleway-Medium.woff) format('woff2');
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway-Bold";
-  src: url(Fontes/Raleway/Raleway-Bold.ttf);
+  src: url(Fontes/Raleway/Raleway-Bold.woff) format('woff2');
+  font-display: swap;
 }
 body,
 html {
-  height: 100%;
+  min-height: 100%;
 }
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
+  box-sizing: border-box;
+  font-display: swap;
+
 }
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   position: relative;
   
 }
@@ -83,7 +91,10 @@ a {
   margin: 0;
   padding: 0;
 }
-
+.logo-am-motos{
+  width: 150px;
+  aspect-ratio: 210 / 75;
+}
 .nav-list a {
   text-decoration: none;
   color: white;
@@ -102,13 +113,8 @@ a {
 }
 .banner {
   width: 100%;
-}
-.banner img {
-  background-size: contain;
-  width: 100%;
-  height: auto;
-  border-radius: 0 0 25px 25px;
-  box-shadow: 0 5px 20px;
+  aspect-ratio: 1920 / 420;
+  display: block;
 }
 .main-services-box {
   width: 100%;
@@ -119,10 +125,18 @@ a {
   align-items: center;
   box-shadow: inset 0 -5px 10px 5px rgba(0, 0, 0, 0.5);
 }
-.main-services-box h1 {
+.main-services-box h2 {
   color: red;
   font-family: "Raleway-ExtraBold";
   font-size: 42px;
+}
+.motor, .estepe {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+}
+.oleo,.engine-oil{
+  width: 100px;
+  aspect-ratio: 120 / 86;
 }
 .services {
   width: 100%;
@@ -176,11 +190,12 @@ span {
   display: flex;
   gap: 30px;
 }
-.all-services h1 {
+.all-services h3 {
   font-family: "Raleway-ExtraBold";
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 35px;
   color: white;
+  padding-bottom: 20px;
 }
 .all-services ul {
   flex-wrap: wrap;
@@ -319,6 +334,11 @@ footer {
   justify-content: center;
   align-items: start;
 }
+address {
+  font-family: "Raleway-Thin";
+  font-weight: bold;
+  width: 80%;
+}
 .direitos-footer {
   width: 100%;
   height: 50px;
@@ -329,6 +349,7 @@ footer {
   align-items: center;
   font-family: "Raleway-ExtraBold";
   text-transform: uppercase;
+  gap: 10px;
 }
 .whatsapp-flutuante{
   
@@ -338,7 +359,39 @@ footer {
 }
 .whatsapp-flutuante img{
   width: 70px;
-  height: auto;}
+  aspect-ratio: 1 / 1;
+}
+
+
+
+
+/* Main */
+.main-title{
+  width: 100%;
+  min-height: 13rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding-block: 20px;
+  margin-top: -5px;
+  box-shadow: inset 2px -2px 30px 1px black;
+}
+.main-title h1{
+  color: white;
+  font-family: 'Raleway-Bold';
+  font-size: 20px;
+  width: 60%;
+}
+.main-title p{
+  color: white;
+  font-family: 'Raleway-Medium';
+  font-size: 20px;
+  width: 80%;
+}
 @media (max-width: 1200px){
 .products-main{
   gap: 30px;
@@ -347,6 +400,18 @@ footer {
 @media (max-width: 768px) {
   footer{
     height: 400px;
+  }
+  .main-title{
+    min-height: 20rem;
+  }
+  .main-title h1{
+    font-size: 15px;
+    width: 80%;
+  }
+  .main-title p{
+    font-size: 15px;
+    width: 80%;
+    text-align: justify;
   }
   .separador-footer{
     width: 100%;
@@ -374,7 +439,7 @@ footer {
     max-width: 200px;
     font-size: 15px;
   }
-  .nos-encontre h1,.contato h1{
+  .nos-encontre h3,.contato h3{
     font-size: 25px;
     width: fit-content;
   }
@@ -435,7 +500,7 @@ footer {
   .services p {
     font-size: 12px;
   }
-  .main-services-box h1 {
+  .main-services-box h2 {
     font-size: 30px;
   }
   .bg-service-01 {
@@ -457,7 +522,7 @@ footer {
     align-items: center;
     padding-bottom: 20px;
   }
-  .title h1 {
+  .title h3 {
     font-size: 25px;
   }
   .list-services {

@@ -3,29 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Am Motos</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/motor-de-carro (2).png" type="image/x-icon">
+    <title>Oficina de Motos em Osasco | AM Motos - Manutenção e Reparos</title>
+    <meta
+      name="description"
+      content="Oficina de motos em Osasco especializada em manutenção, revisão, troca de óleo, freios e suspensão. Atendimento rápido e com qualidade para todas as marcas e modelos."
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="banner-am-motos.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+
+    <link
+      rel="shortcut icon"
+      href="img/motor-de-carro.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <div class="top-bar" id="home">
+    <aside class="top-bar" id="home">
       <div class="top-bar-telefones">
-      <p><a href="https://wa.me/551136832646">Whatsapp: (11) 3683-2646</a></p>
-            <p>Telefone: (11) 3698-6009</p></div>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/am.motos.osasco/">Instagram</a>
+        <p><a href="https://wa.me/551136832646">Whatsapp: (11) 3683-2646</a></p>
+        <p>Telefone: (11) 3698-6009</p>
       </div>
-    </div>
+      <aside class="social-icons">
+        <a href="https://www.instagram.com/am.motos.osasco/">Instagram</a>
+      </aside>
+    </aside>
     <header class="header">
       <div class="logo">
         <a href="https://wa.me/551136832646"
-          ><img src="img/Logo AM 1.png" alt="logo am motos" width="150"
+          ><img
+            src="img/logo-ammotos.png"
+            alt="logo am motos"
+            class="logo-am-motos"
         /></a>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html#home">Home</a></li>
-          <!-- <li><a href="#">Sobre</a></li> -->
           <li><a href="index.html#all-services">Serviços</a></li>
           <li><a href="https://wa.me/551136832646">Contato</a></li>
           <li><a href="index.html#product">Produtos</a></li>
@@ -33,126 +58,138 @@
       </nav>
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </header>
-    <section class="banner">
-      <img
-        src="img/banner am motos.png"
-        alt=""
-      />
-    </section>
+    <img src="img/banner-am-motos.svg" alt="Banner AM Motos" class="banner" loading="lazy" />
+
+    <main class="main-title">
+      <h1>
+        Oficina de Motos e Retificadora em Osasco – Manutenção e Reparos com
+        Qualidade
+      </h1>
+      <p>
+        Se você está procurando uma
+        <strong>oficina de motos em Osasco</strong> confiável, com atendimento
+        especializado e serviços de alta qualidade, você está no lugar certo.
+        Nossa oficina oferece manutenção preventiva, revisão completa, troca de
+        óleo, consertos elétricos, mecânica geral, além de serviços de
+        <strong>retífica de motores</strong>. Atendemos diversas marcas e
+        modelos, sempre com transparência, agilidade e preços justos. Venha nos
+        visitar e mantenha sua moto em perfeito estado!
+      </p>
+    </main>
 
     <section class="main-services-box">
       <div>
-        <h1>Principais Serviços</h1>
+        <h2>Principais Serviços</h2>
       </div>
       <div class="services">
-        <div class="service-01">
+        <article class="service-01">
           <div class="bg-service-01">
-            <img class="engine-oil" src="img/engine-oil.png" alt="" />
+            <img
+              class="engine-oil"
+              src="img/engine-oil.png"
+              alt="Imagem de troca de óleo de moto"
+            />
           </div>
           <p>Troca de Oleo</p>
-        </div>
-        <div class="service-01">
+        </article>
+        <article class="service-01">
           <div class="bg-service-01">
-            <img class="estepe" src="img/estepe.png" alt="" />
+            <img
+              class="estepe"
+              src="img/estepe.png"
+              alt="Foto de estepe"
+              class="estepe"
+            />
           </div>
           <p>Freios e Suspensão</p>
-        </div>
-        <div class="service-01">
+        </article>
+        <article class="service-01">
           <div class="bg-service-01">
-            <img class="motor" src="img/motor-de-carro (2).png" alt="" />
+            <img
+              class="motor"
+              src="img/motor-de-carro.png"
+              alt="Foto de motor"
+              class="motor"
+            />
           </div>
           <p>Motor e Mecanica Geral</p>
-        </div>
+        </article>
       </div>
     </section>
     <section class="all-services" id="all-services">
       <div class="title">
-        <h1>Todos os serviços</h1>
+        <h3>Todos os serviços</h3>
       </div>
       <div class="list-services">
         <ul>
           <li>Mecanica Geral</li>
           <li>Auto Eletrica</li>
-          <li>Alinhamento e Balanceamento</li>
-          <li>Suspensão Automotiva</li>
           <li>Embreagens</li>
         </ul>
         <ul>
           <li>Freios</li>
           <li>Higienização</li>
           <li>Diagnóstico de injeção eletrônica</li>
-          <li>Pneus</li>
-          <li>Troca de óleo e filtros</li>
+          <li>Troca de Pneus</li>
         </ul>
       </div>
     </section>
 
-    <section class="products-container"  id="product">
-      <!-- <main class="products-main">
-        <div class="product">
-          <img
-            src=""
-            alt=""
-          />
-          <p>Capacete Preto Fechado</p>
-          <p>R$650,00</p>
-          <a href="">Ver Produto</a>
-        </div>
-        <div class="product">
-          <img
-            src=""
-            alt=""
-          />
-          <p>Capacete Preto Fechado</p>
-          <p>R$650,00</p>
-          <a href="">Ver Produto</a>
-        </div>
-        <div class="product">
-          <img
-            src=""
-            alt=""
-          />
-          <p>Capacete Preto Fechado</p>
-          <p>R$650,00</p>
-          <a href="">Ver Produto</a>
-        </div>
-      </main> -->
+    <section class="products-container" id="product">
       <div class="button-container">
         <div class="product-button">
-          <a href="">Produtos</a>
+          <a href="https://www.instagram.com/am.motos.osasco/">Produtos</a>
         </div>
       </div>
     </section>
     <footer>
       <div class="footer-info">
-      <div class="contato">
+        <div class="contato">
           <div class="separador-footer">
-            <h1>Contato</h1>
+            <h3>Contato</h3>
             <div class="telefone-footer">
-            <p><a href="https://wa.me/551136832646">Whatsapp: (11) 3683-2646</a></p>
-            <p>Telefone: (11) 3698-6009</p>
-            <p>balcaoammotos@terra.com.br</p></div>
+              <p>
+                <a href="https://wa.me/551136832646"
+                  >Whatsapp: (11) 3683-2646</a
+                >
+              </p>
+              <p>Telefone: (11) 3698-6009</p>
+              <p>balcaoammotos@terra.com.br</p>
+            </div>
           </div>
+        </div>
+        <div class="nos-encontre">
+          <h3>Nos encontre !</h3>
+          <address>
+            R. Georgina 73 - Jardim das Flores, Osasco - SP, 06120-040
+          </address>
+        </div>
       </div>
-      <div class="nos-encontre">
-        <h1>Nos encontre !</h1>
-        <p>R. Georgina 73 - Jardim das Flores, Osasco - SP, 06120-040</p>
-      </div>
-    </div>
       <div class="direitos-footer">
-        <p>AM MOTOS - Copywrite ® 2025 - Todos os Direitos Reservados.</p>
+        <p>AM MOTOS - Copyright ® 2025 - Todos os Direitos Reservados.</p>
+        <p>Desenvolvido por <a href="https://www.instagram.com/andrr.c/">André Cassimiro</a></p>
       </div>
     </footer>
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const navList = document.querySelector(".nav-list");
-
-      menuToggle.addEventListener("click", () => {
-        navList.classList.toggle("active");
-      });
-    </script>
     <div class="whatsapp-flutuante">
-     <a href="https://wa.me/551136832646"><img src="img/icons8-whatsapp-96.png" alt=""></a>
+      <a
+        href="https://wa.me/551136832646"
+        target="_blank"
+        aria-label="Fale conosco no WhatsApp"
+      >
+        <img
+          src="img/icons8-whatsapp-96.png"
+          alt="Ícone do WhatsApp"
+          class="whatsapp-icon"
+        />
+      </a>
     </div>
   </body>
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
 </html>
