@@ -517,7 +517,7 @@ address {
 
   }
   .banner-text{
-    font-size: 20px;
+    font-size: 25px;
     width: 80%;
   }
   .product {
@@ -619,6 +619,6 @@ address {
 }
 @media (max-width: 480px) {
   .banner{
-    aspect-ratio: 1920 / 700;
+    aspect-ratio: 1920 / 900;
   }
 }
