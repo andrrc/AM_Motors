@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oficina de Motos em Osasco | AM Motos - Manutenção e Reparos</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CQ8PNJMKJY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CQ8PNJMKJY");
+    </script>
     <meta
       name="description"
       content="Oficina de motos em Osasco especializada em manutenção, revisão, troca de óleo, freios e suspensão. Atendimento rápido e com qualidade para todas as marcas e modelos."
     />
     <link
-      rel="preload"
-      fetchpriority="high"
       as="image"
+      fetchpriority="high"
       href="banner-am-motos.svg"
+      rel="preload"
       type="image/svg"
     />
     <link
-      rel="preload"
-      href="style.css"
       as="style"
+      href="style.css"
       onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
     />
     <noscript><link rel="stylesheet" href="style.css" /></noscript>
-
-    <link
-      rel="shortcut icon"
-      href="img/motor-de-carro.png"
-      type="image/x-icon"
+    <link href="img/logo_ammotos_com_fundo.jpg" rel="shortcut icon" type="image/x-icon" />
+    <meta property="og:title" content="AM Motos - Oficina de Motos em Osasco" />
+    <meta
+      property="og:description"
+      content="Oficina de motos em Osasco especializada em manutenção, revisão, troca de óleo, freios e suspensão. Atendimento rápido e com qualidade para todas as marcas e modelos."
     />
+    <meta
+      property="og:image"
+      content="https://ammotors.com.br/img/logo-ammotos.png"
+    />
+    <meta property="og:url" content="https://ammotos.com.br" />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <aside class="top-bar" id="home">
       <div class="top-bar-telefones">
         <p><a href="https://wa.me/551136832646">Whatsapp: (11) 3683-2646</a></p>
+
         <p>Telefone: (11) 3698-6009</p>
       </div>
+
       <aside class="social-icons">
         <a href="https://www.instagram.com/am.motos.osasco/">Instagram</a>
       </aside>
     </aside>
+
     <header class="header">
       <div class="logo">
         <a href="https://wa.me/551136832646"
           ><img
-            src="img/logo-ammotos.png"
             alt="logo am motos"
             class="logo-am-motos"
+            src="img/logo-ammotos.png"
         /></a>
       </div>
+
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html#home">Home</a></li>
@@ -56,18 +80,36 @@
           <li><a href="index.html#product">Produtos</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
-    <img src="img/banner-am-motos.svg" alt="Banner AM Motos" class="banner" loading="lazy" />
+
+    <div class="banner-box">
+      <img
+        alt="Banner AM Motos"
+        class="banner"
+        loading="lazy"
+        src="img/banner.jpg"
+      />
+      <div class="banner-overlay"></div>
+      <div class="banner-text">
+        <p>Desde <strong>1998</strong></p>
+        <p>
+          te atendendo com qualidade, paixão e expertise para deixar sua moto
+          sempre pronta para a estrada!
+        </p>
+      </div>
+    </div>
 
     <main class="main-title">
       <h1>
-        Oficina de Motos e Retificadora em Osasco – Manutenção e Reparos com
+        Oficina de Motos e Retificadora em Osasco - Manutenção e Reparos com
         Qualidade
       </h1>
+
       <p>
         Se você está procurando uma
-        <strong>oficina de motos em Osasco</strong> confiável, com atendimento
+        <strong>oficina de motos em Osasco</strong> confiavel, com atendimento
         especializado e serviços de alta qualidade, você está no lugar certo.
         Nossa oficina oferece manutenção preventiva, revisão completa, troca de
         óleo, consertos elétricos, mecânica geral, além de serviços de
@@ -81,56 +123,59 @@
       <div>
         <h2>Principais Serviços</h2>
       </div>
+
       <div class="services">
         <article class="service-01">
           <div class="bg-service-01">
             <img
+              alt="Imagem de troca de óleo de moto"
               class="engine-oil"
               src="img/engine-oil.png"
-              alt="Imagem de troca de óleo de moto"
             />
           </div>
+
           <p>Troca de Oleo</p>
         </article>
+
         <article class="service-01">
           <div class="bg-service-01">
-            <img
-              class="estepe"
-              src="img/estepe.png"
-              alt="Foto de estepe"
-              class="estepe"
-            />
+            <img alt="Foto de estepe" class="estepe" src="img/estepe.png" />
           </div>
+
           <p>Freios e Suspensão</p>
         </article>
+
         <article class="service-01">
           <div class="bg-service-01">
             <img
-              class="motor"
-              src="img/motor-de-carro.png"
               alt="Foto de motor"
               class="motor"
+              src="img/motor-de-carro.png"
             />
           </div>
+
           <p>Motor e Mecanica Geral</p>
         </article>
       </div>
     </section>
+
     <section class="all-services" id="all-services">
       <div class="title">
         <h3>Todos os serviços</h3>
       </div>
+
       <div class="list-services">
         <ul>
-          <li>Mecanica Geral</li>
-          <li>Auto Eletrica</li>
+          <li>Mecânica geral</li>
+          <li>Autoelétrica</li>
           <li>Embreagens</li>
+          <li>Retífica de motores</li>
         </ul>
         <ul>
           <li>Freios</li>
           <li>Higienização</li>
-          <li>Diagnóstico de injeção eletrônica</li>
-          <li>Troca de Pneus</li>
+          <li>Troca de óleo e filtros</li>
+          <li>Troca de pneus</li>
         </ul>
       </div>
     </section>
@@ -142,44 +187,55 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer-info">
         <div class="contato">
           <div class="separador-footer">
             <h3>Contato</h3>
+
             <div class="telefone-footer">
               <p>
                 <a href="https://wa.me/551136832646"
                   >Whatsapp: (11) 3683-2646</a
                 >
               </p>
+
               <p>Telefone: (11) 3698-6009</p>
+
               <p>balcaoammotos@terra.com.br</p>
             </div>
           </div>
         </div>
+
         <div class="nos-encontre">
           <h3>Nos encontre !</h3>
+
           <address>
             R. Georgina 73 - Jardim das Flores, Osasco - SP, 06120-040
           </address>
         </div>
       </div>
+
       <div class="direitos-footer">
-        <p>AM MOTOS - Copyright ® 2025 - Todos os Direitos Reservados.</p>
-        <p>Desenvolvido por <a href="https://www.instagram.com/andrr.c/">André Cassimiro</a></p>
+        <p>AM MOTOS - Copyright - 2025 - Todos os Direitos Reservados.</p>
+
+        <p>
+          Desenvolvido por
+          <a href="https://www.instagram.com/andrr.c/">André Cassimiro</a>
+        </p>
       </div>
     </footer>
+
     <div class="whatsapp-flutuante">
       <a
+        aria-label="Fale conosco no WhatsApp"
         href="https://wa.me/551136832646"
         target="_blank"
-        aria-label="Fale conosco no WhatsApp"
-      >
-        <img
-          src="img/icons8-whatsapp-96.png"
+        ><img
           alt="Ícone do WhatsApp"
           class="whatsapp-icon"
+          src="img/icons8-whatsapp-96.png"
         />
       </a>
     </div>
